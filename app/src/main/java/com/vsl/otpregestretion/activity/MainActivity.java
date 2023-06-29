@@ -58,9 +58,8 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, Constant.SOMETHING_WRONG, Toast.LENGTH_SHORT).show();
                                 i[0]++;
                             }
-                            if (finalData.data != null){
-                            binding.textView.setText(finalData.data.getStatus());
-                            binding.textView2.setText(finalData.data.getDetails());}
+//                            binding.textView.setText(finalData.data.getStatus());
+//                            binding.textView2.setText(finalData.data.getDetails());
                             break;
                     }
                 });
@@ -98,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
                 otpViewModel.checkApiOtp(data, phOtp);
             }
         });
+
+
 
     }
 }
